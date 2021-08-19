@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Switch, Route, Link } from "react-router-dom";
 import DatePicker from "./Pages/DatePicker";
 
