@@ -1,0 +1,44 @@
+[
+    {
+        "horario":"08:00",
+        "categoria":"Abertura",
+        "atracao":"Inicio",
+        "tema":""
+    },
+    {
+        "horario":"09:30",
+        "categoria":"Pregacao",
+        "atracao":"Gill Motta",
+        "tema":"O Grande Dia"
+    },
+    {
+        "horario":"11:30",
+        "categoria":"Pregacao",
+        "atracao":"Andre Maria",
+        "tema":"Apelo a Conversao"
+    },
+    {
+        "horario":"14:30",
+        "categoria":"Workshop",
+        "atracao":["Pe. Hugo",""],
+        "tema":"Evangelizacao nos Tempos Atuais"
+    },
+    {
+        "horario":"15:30",
+        "categoria":"Pregacao",
+        "atracao":"David Fernandes",
+        "tema":"Exercito da Imaculada"
+    },
+    {
+        "horario":"17:00",
+        "categoria":"Pregacao",
+        "atracao":"Thayna Azevedo",
+        "tema":"Jovens Decididos em busca do reino de Deus"
+    },
+    {
+        "horario":"18:45",
+        "categoria":"Santa Missa",
+        "atracao":"",
+        "tema":""
+    }
+]

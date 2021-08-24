@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { MobileContext } from "../App";
 
 const Main = styled.div`
   width: 100%;
@@ -8,7 +10,7 @@ const Main = styled.div`
   justify-content: space-evenly;
 `;
 
-const DateContainer1 = styled.div`
+const DateColumnContainer1 = styled.div`
   width: 15vw;
   height: 70vh;
   border-bottom: solid 5px #eaa911;
@@ -25,7 +27,7 @@ const DateContainer1 = styled.div`
     cursor: pointer;
   }
 `;
-const DateContainer2 = styled.div`
+const DateColumnContainer2 = styled.div`
   width: 15vw;
   height: 70vh;
   border-top: solid 5px #eaa911;
@@ -42,27 +44,68 @@ const DateContainer2 = styled.div`
     cursor: pointer;
   }
 `;
+const DateRowContainer1 = styled.div`
+  width: 70vw;
+  height: 20vh;
+  border-bottom: solid 5px #eaa911;
+  border-right: solid 5px #eaa911;
+  border-top: solid 5px #eaa911;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+`;
+const DateRowContainer2 = styled.div`
+  width: 70vw;
+  height: 20vh;
+  border-bottom: solid 5px #eaa911;
+  border-left: solid 5px #eaa911;
+  border-top: solid 5px #eaa911;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+`;
 
 const Date = styled.p`
   color: #eaa911;
   font-size: 6em;
-  font-family: "montsera";
-  text-anchor: middle;
+  font-family: "Montsera";
   text-decoration: none;
 `;
 
 export default function DatePicker() {
+  const { isMobile } = useContext(MobileContext);
+
   return (
-    <Main className="App">
-      <Link to="/sabado" style={{ alignSelf: "flex-start",textDecoration:"none" }}>
-        <DateContainer1 >
-          <Date>09/10</Date>
-        </DateContainer1>
+    <Main style={{ flexDirection: isMobile ? "column" : "row" }}>
+      <Link
+        to="/sabado"
+        style={{ alignSelf: "flex-start", textDecoration: "none" }}
+      >
+        {isMobile ? (
+          <DateRowContainer1>
+            <Date style={{fontSize:"4em"}}>09/10</Date>
+          </DateRowContainer1>
+        ) : (
+          <DateColumnContainer1>
+            <Date>09/10</Date>
+          </DateColumnContainer1>
+        )}
       </Link>
-      <Link to="/domingo" style={{ alignSelf: "flex-end",textDecoration:"none" }}>
-        <DateContainer2 >
-          <Date>10/10</Date>
-        </DateContainer2>
+      <Link
+        to="/domingo"
+        style={{ alignSelf: "flex-end", textDecoration: "none" }}
+      >
+        {isMobile ? (
+          <DateRowContainer2>
+            <Date style={{fontSize:"4em"}}>10/10</Date>
+          </DateRowContainer2>
+        ) : (
+          <DateColumnContainer2>
+            <Date>10/10</Date>
+          </DateColumnContainer2>
+        )}
       </Link>
     </Main>
   );

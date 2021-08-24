@@ -1,0 +1,44 @@
+[
+    {
+        "horario":"08:00",
+        "categoria":"Abertura",
+        "atracao":"Inicio",
+        "tema":""
+    },
+    {
+        "horario":"09:30",
+        "categoria":"Pregacao",
+        "atracao":"David Fernandes",
+        "tema":"Volta"
+    },
+    {
+        "horario":"11:30",
+        "categoria":"Pregacao",
+        "atracao":"Gill Motta",
+        "tema":"Amigo Fiel"
+    },
+    {
+        "horario":"15:00",
+        "categoria":"Workshop",
+        "atracao":["Jack Souza", " - Garota Sentinela"],
+        "tema":"Evangelizacao nas Redes Sociais"
+    },
+    {
+        "horario":"16:30",
+        "categoria":"Pregacao",
+        "atracao":"Thayna Azevedo",
+        "tema":"Amar Jesus desde Cedo"
+    },
+    {
+        "horario":"17:45",
+        "categoria":"Pregacao",
+        "atracao":"Andre Maria",
+        "tema":"Fazer da minha Casa uma Morada de Deus"
+    },
+    {
+        "horario":"20:00",
+        "categoria":"Show",
+        "atracao":"Colo de Deus",
+        "tema":""
+    }
+]
