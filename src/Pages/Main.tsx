@@ -52,6 +52,7 @@ width: 100vw;
 height: 100vh;
 display: flex;
 flex-direction: column;
+justify-content: space-evenly;
 align-items: center;
 text-align: center;
 overflow: hidden;
@@ -59,15 +60,15 @@ overflow: hidden;
 
 &>div{
     width: 90%;
-    /* flex:1; */
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     font-family: "Evogria";
     z-index: 2;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-size: 1.3rem;
+    /* margin-top: 2rem; */
 
     a{
         width: 80%;
@@ -86,8 +87,9 @@ overflow: hidden;
 }
 
 h1{
+    width: 90%;
     color: #eaa911;
-    font-size: 7rem;
+    font-size: 5.5rem;
     font-weight: 500;
     z-index: 3;
     margin: 0;
