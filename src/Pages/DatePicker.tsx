@@ -20,6 +20,8 @@ const DateColumnContainer1 = styled.div`
   align-items: flex-end;
   justify-content: center;
   transition: all 0.3s;
+  box-shadow: 0 4px 30px #eaa91155;
+
 
   &:hover {
     background: #333;
@@ -37,6 +39,8 @@ const DateColumnContainer2 = styled.div`
   align-items: flex-start;
   justify-content: center;
   transition: all 0.3s;
+  box-shadow: 0 4px 30px #eaa91155;
+
 
   &:hover {
     background: #333;
@@ -54,6 +58,8 @@ const DateRowContainer1 = styled.div`
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  box-shadow: 0 4px 30px #eaa91155;
+
 `;
 const DateRowContainer2 = styled.div`
   width: 70vw;
@@ -65,6 +71,7 @@ const DateRowContainer2 = styled.div`
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  box-shadow: 0 4px 30px #eaa91155;
 `;
 
 const Date = styled.p`

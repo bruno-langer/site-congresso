@@ -5,6 +5,8 @@ import { Switch, Route } from "react-router-dom";
 import DatePicker from "./Pages/DatePicker";
 import Sabado from "./Pages/Sabado";
 import Domingo from "./Pages/Domingo";
+import Main from "./Pages/Main";
+import Local from "./Pages/Local";
 
 const MobileContext = createContext({ isMobile: false });
 
@@ -31,6 +33,9 @@ function App() {
       <MobileContext.Provider value={{ isMobile }}>
         <Switch>
           <Route exact path="/">
+            <Main />
+          </Route>
+          <Route  path="/date">
             <DatePicker />
           </Route>
           <Route path="/sabado">
@@ -38,6 +43,9 @@ function App() {
           </Route>
           <Route path="/domingo">
             <Domingo />
+          </Route>
+          <Route path="/local">
+            <Local />
           </Route>
         </Switch>
       </MobileContext.Provider>

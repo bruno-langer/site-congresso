@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: "Pixel";
   src: url("fonts/Pixelopolis 9000.ttf") format('truetype');
 }
+@font-face {
+  font-family: "Evogria";
+  src: url("fonts/Evogria.otf") format('opentype');
+}
 
 
 
@@ -20,7 +24,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #242424;
     margin:0;
     font-family: "Montsera";
+  overflow: hidden;
+
   }
 `
 
-export {GlobalStyle}
+export { GlobalStyle }

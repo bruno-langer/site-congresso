@@ -57,8 +57,8 @@ const Categoria = styled.span`
 `;
 const Tema = styled.span`
   color: white;
-  font-family: "Pixel";
-  font-size: 2.5em;
+  font-family: "Evogria";
+  font-size: 1.2em;
 `;
 const Horario = styled.h1`
   margin: 0 2rem 0 1rem;
