@@ -11,7 +11,6 @@ justify-content: space-evenly;
 `
 
 const Legend = styled.div`
-
 width: 25vw;
 height: 50vh;
 display: flex;
@@ -20,8 +19,6 @@ align-items: center;
 color: #eaa911;
 font-family: "Evogria";
 border-bottom: solid 8px #eaa911;
-
-
 h1{
     font-size: 70px;
 }
@@ -51,8 +48,6 @@ align-items: center;
 color: #eaa911;
 font-family: "Evogria";
 margin-bottom: 2em ;
-/* border-bottom: solid 8px #eaa911; */
-
 
 h1{
     font-size: 30px;
