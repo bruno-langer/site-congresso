@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: "Evogria";
   src: url("fonts/Evogria.otf") format('opentype');
 }
+@font-face {
+  font-family: "Heavitas";
+  src: url("fonts/Heavitas.ttf") format('truetype');
+}
 
 
 

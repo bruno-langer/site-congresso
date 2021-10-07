@@ -1,21 +1,51 @@
 [
     {
         "horario":"08:00",
-        "categoria":"ABERTURA",
-        "atracao":"INICIO",
+        "categoria":"INÍCIO",
+        "atracao":"",
         "tema":""
     },
     {
-        "horario":"09:30",
-        "categoria":"PREGACAO",
+        "horario":"08:30",
+        "categoria":"ABERTURA E ANIMAÇÃO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"09:10",
+        "categoria":"PREGAÇÃO",
         "atracao":"David Fernandes",
         "tema":"Volta"
     },
     {
+        "horario":"10:45",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
+    },
+    {
         "horario":"11:30",
-        "categoria":"PREGACAO",
+        "categoria":"PREGAÇÃO",
         "atracao":"Gill Motta",
         "tema":"Amigo Fiel"
+    },
+    {
+        "horario":"13:00",
+        "categoria":"ALMOÇO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"14:10",
+        "categoria":"ANIMAÇÃO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"14:40",
+        "categoria":"TEATRO",
+        "atracao":"",
+        "tema":""
     },
     {
         "horario":"15:00",
@@ -24,19 +54,31 @@
         "tema":"Evangelização nas Redes Sociais"
     },
     {
-        "horario":"16:30",
-        "categoria":"PREGACAO",
+        "horario":"15:45",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"16:00",
+        "categoria":"PREGAÇÃO",
         "atracao":"Thayna Azevedo",
         "tema":"Amar Jesus desde Cedo"
     },
     {
-        "horario":"17:45",
-        "categoria":"PREGACAO",
+        "horario":"17:30",
+        "categoria":"PREGAÇÃO",
         "atracao":"Andre Maria",
         "tema":"Fazer da minha Casa uma Morada de Deus"
     },
     {
-        "horario":"20:00",
+        "horario":"19:00",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"20:30",
         "categoria":"SHOW",
         "atracao":"Colo de Deus",
         "tema":""

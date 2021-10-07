@@ -7,6 +7,7 @@ import Sabado from "./Pages/Sabado";
 import Domingo from "./Pages/Domingo";
 import Main from "./Pages/Main";
 import Local from "./Pages/Local";
+import Faq from "./Pages/Faq";
 
 const MobileContext = createContext({ isMobile: false });
 
@@ -35,7 +36,7 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route  path="/date">
+          <Route path="/date">
             <DatePicker />
           </Route>
           <Route path="/sabado">
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route path="/local">
             <Local />
+          </Route>
+          <Route path="/faq">
+            <Faq />
           </Route>
         </Switch>
       </MobileContext.Provider>

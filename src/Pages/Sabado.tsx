@@ -3,56 +3,58 @@ import styled from "styled-components";
 import { MobileContext } from "../App";
 import agenda from "../assets/data/sabado.json";
 
-const Main = styled.div<{isMobile:boolean}>`
+const Main = styled.div<{ isMobile: boolean }>`
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: flex-start;
-  flex-direction:${({isMobile})=>isMobile?"column":"row"};
+  flex-direction:${({ isMobile }) => isMobile ? "column" : "row"};
 `;
 
-const Column = styled.aside<{ top: boolean,isMobile:boolean }>`
-  height: ${({isMobile})=>isMobile?"10vh":"70vh"};
-  width: ${({isMobile})=>isMobile?"100vw":"10vw"};
+const Column = styled.aside<{ top: boolean, isMobile: boolean }>`
+  height: ${({ isMobile }) => isMobile ? "10vh" : "70vh"};
+  width: ${({ isMobile }) => isMobile ? "100vw" : "10vw"};
   color: #eaa911;
   display: flex;
-  flex-direction: ${({isMobile})=>isMobile?"row":"column"};
-  justify-content: ${({isMobile})=>isMobile?"center":"flex-start"};
+  flex-direction: ${({ isMobile }) => isMobile ? "row" : "column"};
+  justify-content: ${({ isMobile }) => isMobile ? "center" : "flex-start"};
   font-size: 4em;
-  ${({ top,isMobile }) =>
-   isMobile?"border-top:solid 12px #eaa911": top ? "border-right:solid 8px #eaa911" : "border-left:solid 9px #eaa911"};
+  ${({ top, isMobile }) =>
+    isMobile ? "border-top:solid 12px #eaa911" : top ? "border-right:solid 8px #eaa911" : "border-left:solid 9px #eaa911"};
   align-self: ${({ top }) => (top ? "flex-start" : "flex-end")};
   align-items: center;
   padding-top: 3rem;
 `;
 
-const Center = styled.main<{isMobile:boolean}>`
-  width: ${({isMobile})=>isMobile?"100vw":"80vw"};
+const Center = styled.main<{ isMobile: boolean }>`
+  width: ${({ isMobile }) => isMobile ? "100vw" : "80vw"};
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
 `;
 
-const LineEvent = styled.div<{isMobile:boolean}>`
+const LineEvent = styled.div<{ isMobile: boolean }>`
   display: flex;
   align-items: center;
-  width: ${({isMobile})=>isMobile?"98%":"90%"};
+  width: ${({ isMobile }) => isMobile ? "98%" : "90%"};
   height: 12rem;
   color: white;
   border-radius: 5px;
   transition: all 0.3s;
-  font-size: ${({isMobile})=>isMobile?"13px":"16px"};
+  font-size: ${({ isMobile }) => isMobile ? "13px" : "16px"};
+  margin: 0.5em 0;
 
   &:hover {
-    background-color:${({isMobile})=>isMobile?"#242424":"#323232"};
-    font-size: ${({isMobile})=>isMobile?"13px":"20px"};
+    background-color:${({ isMobile }) => isMobile ? "#242424" : "#323232"};
+    font-size: ${({ isMobile }) => isMobile ? "13px" : "20px"};
   }
 `;
 
 const Categoria = styled.span`
   color: #eaa911;
-  font-size: 3em;
+  font-size: 2em;
+  font-family: "Evogria";
 `;
 const Tema = styled.span`
   color: white;
@@ -66,19 +68,19 @@ const Horario = styled.h1`
 `;
 
 const Atracao = styled.span`
-  font-size: 0.8em;
-  font-family: "Pixel";
+  font-size: 0.6em;
+  font-family: "Heavitas";
 `;
 
 export default function Sabado() {
 
-  const {isMobile} = useContext(MobileContext)
+  const { isMobile } = useContext(MobileContext)
 
   return (
     <Main isMobile={isMobile}>
       <Column top={true} isMobile={isMobile}>
         <span>09/10</span>
-        {isMobile?<span style={{margin:"0 1rem"}}>|</span>:null}
+        {isMobile ? <span style={{ margin: "0 1rem" }}>|</span> : null}
         <span>SABADO</span>
       </Column>
       <Center isMobile={isMobile}>
@@ -94,7 +96,7 @@ export default function Sabado() {
                 }}
               >
                 <Categoria>
-                  {evento.categoria} |<Atracao> {evento.atracao}</Atracao>
+                  {evento.categoria} {evento.atracao !== ""?"|":""}<Atracao> {evento.atracao}</Atracao>
                 </Categoria>
                 <Tema>{evento.tema}</Tema>
               </div>
@@ -102,8 +104,7 @@ export default function Sabado() {
           );
         })}
       </Center>
-      {isMobile?null:<Column isMobile={isMobile} top={false}></Column>}
+      {isMobile ? null : <Column isMobile={isMobile} top={false}></Column>}
     </Main>
   );
 }
- 

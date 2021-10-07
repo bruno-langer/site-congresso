@@ -1,0 +1,34 @@
+[
+    {
+        "pergunta":"Quando e onde vai ser?",
+        "resposta":"9 e 10 de outubro, na Yelo Stage, em Joinville/SC"
+    },
+    {
+        "pergunta":"Que horas inicia e acaba o evento?",
+        "resposta":"Sábado - início 8h e término 22h / Domingo: início 8h e término 21h"
+    },
+    {
+        "pergunta":"Quanto é o ingresso?",
+        "resposta":"R$ 40,00"
+    },
+    {
+        "pergunta":"O valor do ingresso inclui alimentação?",
+        "resposta":"Não, alimentação e bebida são separados"
+    },
+    {
+        "pergunta":"Tem alguma parceria com restaurante?",
+        "resposta":"Sim, com o restaurante Q Massa, ao lado da Yelo. Pode se servir prato por kg ou livre R$ 30,00"
+    },
+    {
+        "pergunta":"O evento será on-line também?",
+        "resposta":"Não, apenas presencial"
+    },
+    {
+        "pergunta":"O evento tem hospedagem inclusa?",
+        "resposta":"Caso necessário, sim. Teremos um alojamento na casa das irmãs Canossianas. Deve trazer colchão, travesseiro e coberta"
+    },
+    {
+        "pergunta":"Terá lojinha dos pregadores?",
+        "resposta":"Sim, haverá um espaço para venda de camisas, terços, bonés, etc"
+    }
+]

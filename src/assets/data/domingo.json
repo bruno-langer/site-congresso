@@ -1,21 +1,45 @@
 [
     {
         "horario":"08:00",
-        "categoria":"ABERTURA",
-        "atracao":"Inicio",
+        "categoria":"INÍCIO",
+        "atracao":"",
         "tema":""
     },
     {
-        "horario":"09:30",
-        "categoria":"PREGACAO",
+        "horario":"08:30",
+        "categoria":"ANIMAÇÃO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"09:15",
+        "categoria":"PREGAÇÃO",
         "atracao":"Gill Motta",
         "tema":"O Grande Dia"
     },
     {
-        "horario":"11:30",
-        "categoria":"PREGACAO",
+        "horario":"10:45",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"11:00",
+        "categoria":"PREGAÇÃO",
         "atracao":"Andre Maria",
         "tema":"Apelo a Conversão"
+    },
+    {
+        "horario":"13:00",
+        "categoria":"ALMOÇO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"14:10",
+        "categoria":"ANIMAÇÃO",
+        "atracao":"",
+        "tema":""
     },
     {
         "horario":"14:30",
@@ -24,16 +48,28 @@
         "tema":"Evangelização nos Tempos Atuais"
     },
     {
-        "horario":"15:30",
-        "categoria":"PREGACAO",
+        "horario":"15:00",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
+    },
+    {
+        "horario":"15:15",
+        "categoria":"PREGAÇÃO",
         "atracao":"David Fernandes",
         "tema":"Exército da Imaculada"
     },
     {
         "horario":"17:00",
-        "categoria":"PREGACAO",
+        "categoria":"PREGAÇÃO",
         "atracao":"Thayna Azevedo",
         "tema":"Jovens Decididos em busca do reino de Deus"
+    },
+    {
+        "horario":"18:30",
+        "categoria":"INTERVALO",
+        "atracao":"",
+        "tema":""
     },
     {
         "horario":"18:45",

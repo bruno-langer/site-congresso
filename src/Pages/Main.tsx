@@ -123,7 +123,9 @@ export default function Main() {
             <h1>CONGRESSO JOVEM TEMPO DA GRACA</h1>
             <div> <Link to="date" style={{ color: "#eaa911", textDecoration: "none" }}><span>Programação</span></Link>
                 <a href="https://www.eventbrite.com/e/congresso-jovem-tempo-da-graca-tickets-164032490595" style={{ color: "#eaa911", textDecoration: "none" }}><span>Ingressos</span></a>
-                <Link to="local" style={{ color: "#eaa911", textDecoration: "none" }}><span>Localização</span></Link></div>
+                <Link to="local" style={{ color: "#eaa911", textDecoration: "none" }}><span>Localização</span></Link>
+                <Link to="faq" style={{ color: "#eaa911", textDecoration: "none" }}><span>FAQ</span></Link>
+            </div>
 
         </MainMobile> :
         <Frame>
@@ -140,6 +142,7 @@ export default function Main() {
                 <Link to="date" style={{ color: "#eaa911", textDecoration: "none" }}><span>Programação</span></Link>
                 <a href="https://www.eventbrite.com/e/congresso-jovem-tempo-da-graca-tickets-164032490595" style={{ color: "#eaa911", textDecoration: "none" }}><span>Ingressos</span></a>
                 <Link to="local" style={{ color: "#eaa911", textDecoration: "none" }}><span>Localização</span></Link>
+                <Link to="faq" style={{ color: "#eaa911", textDecoration: "none" }}><span>FAQ</span></Link>
             </Subtitle>
         </Frame>
 }

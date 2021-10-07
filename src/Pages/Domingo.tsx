@@ -43,6 +43,7 @@ const LineEvent = styled.div<{isMobile:boolean}>`
   border-radius: 5px;
   transition: all 0.3s;
   font-size: ${({isMobile})=>isMobile?"13px":"16px"};
+  margin: 0.5em 0;
 
   
   &:hover {
@@ -53,7 +54,9 @@ const LineEvent = styled.div<{isMobile:boolean}>`
 
 const Categoria = styled.span`
   color: #eaa911;
-  font-size: 3em;
+  font-size: 2em;
+  font-family: "Evogria";
+
 `;
 const Tema = styled.span`
   color: white;
@@ -67,8 +70,8 @@ const Horario = styled.h1`
 `;
 
 const Atracao = styled.span`
-  font-size: 0.8em;
-  font-family: "Pixel";
+  font-size: 0.6em;
+  font-family: "Heavitas";
 `;
 
 export default function Domingo() {
@@ -95,7 +98,7 @@ export default function Domingo() {
                 }}
               >
                 <Categoria>
-                  {evento.categoria} |<Atracao> {evento.atracao}</Atracao>
+                  {evento.categoria} {evento.atracao !== ""?"|":""}<Atracao> {evento.atracao}</Atracao>
                 </Categoria>
                 <Tema>{evento.tema}</Tema>
               </div>
